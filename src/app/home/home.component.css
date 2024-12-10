@@ -7,6 +7,7 @@
     align-items: center;  /* Vertically center the content */
     padding: 50px;
     padding-left: 10px;
+    margin-top: 70px; 
 
 }
 
@@ -61,3 +62,39 @@
 }
 
 
+/* Responsive for tablets and smaller screens */
+@media (max-width: 768px) {
+    .container, .container-myskills, .container-whatido {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align content */
+        text-align: center; /* Center text for better readability */
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .left {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+        font-size: medium; /* Reduce font size */
+    }
+
+    .right img {
+        width: 300px; /* Adjust image size */
+        height: 300px; /* Maintain aspect ratio */
+    }
+}
+
+/* Responsive for mobile phones */
+@media (max-width: 480px) {
+    .container, .container-myskills, .container-whatido {
+        padding: 10px; /* Further reduce padding for small devices */
+    }
+
+    .left {
+        font-size: small; /* Further reduce font size for readability */
+        line-height: 1.5; /* Adjust line height for better fit */
+    }
+
+    .right img {
+        width: 200px; /* Smaller image size for mobile */
+        height: 200px; /* Maintain aspect ratio */
+    }
+}
